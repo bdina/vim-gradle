@@ -15,6 +15,8 @@ CompilerSet makeprg=./gradlew
 CompilerSet errorformat=
     \%E[ant:scalac]\ %f:%l:\ error:\ %m,
     \%W[ant:scalac]\ %f:%l:\ warning:\ %m,
+    \%E[Error]\ %f:%l:%c:\ %m,
+    \%W[Warning]\ %f:%l:%c:\ %m,
     \%E%.%#:compile%\\w%#Java%f:%l:\ error:\ %m,%-Z%p^,%-C%.%#,
     \%W%.%#:compile%\\w%#Java%f:%l:\ warning:\ %m,%-Z%p^,%-C%.%#,
     \%E%f:%l:\ error:\ %m,%-Z%p^,%-C%.%#,
